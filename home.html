@@ -80,7 +80,7 @@ footer {
       border: solid 5px #6f42c1;
     }
 /* Shooting Star Animation */
-    .shooting-star {
+    .twinkle-star {
       position: fixed;
       top: 0;
       left: 100%;
@@ -88,21 +88,21 @@ footer {
       height: 5px;
       content: "☆" ;
       background: linear-gradient(#e8b127);
-      animation: shooting 2s linear infinite;
+      animation: twinkle 2s linear infinite;
       z-index: 9999;
     }
     
-    @keyframes shooting {
+    @keyframes twinkle {
       0% {
-        transform: translate(7, -4) rotate(45deg);
+        transform: scale(0.5) rotate(45deg);
         opacity: 0.3;
       }
       50% {
-        transform: translate(-100vw, 50vh) rotate(45deg);
-        opacity: 0.3;
+        transform: scale(1) rotate(45deg);
+        opacity: 1;
       }
       100% {
-        transform: translate(-150vw, 100vh) rotate(-45deg);
+        transform: scale(0.5) rotate(-45deg);
         opacity: 0.3;
       }
     }
@@ -243,15 +243,15 @@ footer {
       }
     });
     // Generate random stars
-    /*const starContainer = document.getElementById("stars-container");
+    const starContainer = document.getElementById("stars-container");
     for (let i = 0; i < 15; i++) {
       const star = document.createElement("div");
-      star.classList.add("shooting-star");
+      star.classList.add("twinkle-star");
       star.style.top = Math.random() * 90 + "%";
       star.style.left = (100 + Math.random() * 20) + "%";
       star.style.animationDelay = Math.random() * 5 + "s";
       starContainer.appendChild(star);
-    }*/
+    }
   </script>
 </body>
 </html>
