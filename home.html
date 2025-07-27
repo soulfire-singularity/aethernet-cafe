@@ -79,6 +79,26 @@ footer {
       animation: shooting 3s linear infinite;
       z-index: 9999;
     }
+    .shooting-star:nth-child(1) {
+      animation-delay: 0s;
+      top: 10%;
+    }
+    .shooting-star:nth-child(2) {
+      animation-delay: 1s;
+      top: 30%;
+    }
+    .shooting-star:nth-child(3) {
+      animation-delay: 2s;
+      top: 50%;
+    }
+    .shooting-star:nth-child(4) {
+      animation-delay: 3s;
+      top: 70%;
+    }
+    .shooting-star:nth-child(5) {
+      animation-delay: 4s;
+      top: 90%;
+    }
 
     @keyframes shooting {
       0% {
@@ -93,6 +113,10 @@ footer {
 
   </style>
 </head><body>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
   <div class="shooting-star"></div>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
