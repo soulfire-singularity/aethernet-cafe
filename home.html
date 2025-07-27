@@ -79,39 +79,7 @@ footer {
       animation: shooting 2s linear infinite;
       z-index: 9999;
     }
-    .shooting-star:nth-child(1) {
-      animation-delay: 0s;
-      top: 55%;
-    }
-    .shooting-star:nth-child(2) {
-      animation-delay: 3s;
-      top: 20%;
-    }
-    .shooting-star:nth-child(3) {
-      animation-delay: 2s;
-      top: 35%;
-    }
-    .shooting-star:nth-child(4) {
-      animation-delay: 6s;
-      top: 15%;
-    }
-    .shooting-star:nth-child(5) {
-      animation-delay: 1s;
-      top: 95%;
-    }
-    .shooting-star:nth-child(6) {
-      animation-delay: 5s;
-      top: 6%;
-    }
-    .shooting-star:ntshooting(7) {
-      animation-delay: 7s;
-      top: 4%;
-    }
-    .shooting-star:nth-child(8) {
-      animation-delay: 8s;
-      top: 10%;
-    }
-
+    
     @keyframes shooting {
       0% {
         transform: translate(0, 0) rotate(45deg);
@@ -129,14 +97,8 @@ footer {
 
   </style>
 </head><body>
-  <div class="shooting-star">  </div>
-  <div class="shooting-star"></div>
-  <div class="shooting-star">  </div>
-  <div class="shooting-star">     </div>
-  <div class="shooting-star"> </div>
-  <div class="shooting-star">       </div>
-  <div class="shooting-star">   </div>
-  <div class="shooting-star"> </div>
+  <!-- Stars container -->
+  <div id="stars-container"></div>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container">
@@ -241,6 +203,16 @@ footer {
         alertBox.classList.remove("d-none");
       }
     });
+    // Generate random stars
+    const starContainer = document.getElementById("stars-container");
+    for (let i = 0; i < 10; i++) {
+      const star = document.createElement("div");
+      star.classList.add("shooting-star");
+      star.style.top = Math.random() * 90 + "%";
+      star.style.left = (100 + Math.random() * 20) + "%";
+      star.style.animationDelay = Math.random() * 5 + "s";
+      starContainer.appendChild(star);
+    }
   </script>
 </body>
 </html>
