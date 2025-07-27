@@ -91,15 +91,15 @@ footer {
     @keyframes shooting {
       0% {
         transform: translate(0, 0) rotate(45deg);
-        opacity: 0.5;
+        opacity: 0.3;
       }
       50% {
         transform: translate(-100vw, 50vh) rotate(45deg);
-        opacity: 0.5;
+        opacity: 0.3;
       }
       100% {
         transform: translate(-150vw, 100vh) rotate(-45deg);
-        opacity: 0.5;
+        opacity: 0.3;
       }
     }
 
@@ -237,7 +237,7 @@ footer {
     });
     // Generate random stars
     const starContainer = document.getElementById("stars-container");
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 15; i++) {
       const star = document.createElement("div");
       star.classList.add("shooting-star");
       star.style.top = Math.random() * 90 + "%";
