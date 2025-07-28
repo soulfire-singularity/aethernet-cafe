@@ -13,18 +13,7 @@
 }
 
 .hero {
-  background: url('https://github.com/user-attachments/assets/36987940-706f-4835-b118-87e9eee0589f') no-repeat center center;
-      background-size: cover;
-      background-attachment: fixed;
-      height: 100vh;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      filter: blur(2px);
+  
 }
 
 .hero h1 {
@@ -100,7 +89,7 @@ footer {
   animation: twinkle 1s infinite ease-in-out;
 }
 
-    
+  
     @keyframes twinkle {
       0% {
         transform: scale(0.9) rotate(-45deg);
@@ -114,6 +103,20 @@ footer {
         transform: scale(0.9) rotate(-45deg);
         opacity: 0.3;
       }
+    }
+    .parallax-bg{
+     background: url('https://github.com/user-attachments/assets/36987940-706f-4835-b118-87e9eee0589f') no-repeat center center;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      filter: blur(2px);
     }
     .bg-purple{
      background-color: #6f42c1;
@@ -146,7 +149,8 @@ footer {
     </div>
   </nav>  <!-- Hero Section -->  
   <section class="hero">
-    
+    <div class="parallax-bg">
+    </div>
     <div class="container">
       <h1>Welcome to AetherNet Cafe</h1>
       <p class="lead">Where the aroma of coffee meets the energy of technology</p>
