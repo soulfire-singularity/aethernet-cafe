@@ -53,7 +53,7 @@ body {
 }
     
 .card {
-  border: solid 2px #9ad06d;
+  border: solid 5px #9ad06d;
   transition: transform 0.3s ease;
   background-color:#291b40;
   color:white;
