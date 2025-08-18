@@ -82,7 +82,7 @@ footer {
 
 .star {
   position: absolute;
-  background: purple;
+  background: white;
   border-radius: 50%;
   opacity: 0;
   animation: twinkle 1s infinite ease-in-out;
