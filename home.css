@@ -36,10 +36,21 @@ body {
   background-color:#18143d;
   color:white;
 }
-    #pricing {
+
+#pricing {
   background-color:#291b40;
   color: white;
-    }
+}
+
+#location {
+  background-color:#291b40;
+  color: white;
+}
+
+#team {
+  background-color:#18143d;
+  color: white;
+}
     
 .card {
   border: solid 2px #9ad06d;
